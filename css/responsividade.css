@@ -1,0 +1,150 @@
+/* ESTILO PARA TABLET */
+
+@media only screen and (min-width:788px) and (max-width: 979px) {
+
+    .info .pessoal ul li img {
+        margin-right: 0px;
+    }
+    
+    .info .pessoal h2 {
+        margin-bottom: 5px;
+    }
+    
+    .info .educacao h2 {
+        margin-bottom: 32px;
+    }
+
+    .info2 .habilidade ul li {
+        width: 40px;
+    }
+
+    .info2 .idioma ul li {
+        width: 40px;
+    }
+}
+
+
+/*ESTILO PARA SMARTPHONE */
+
+@media only screen and (max-width: 787px) {
+
+    .subtitulo {
+        font-weight: bold;
+        text-align: center;
+    }
+    
+    .subtitulo::before {
+        content: "";
+        display: block;
+        width: 40px;
+        height: 3px;
+        background-color: var(--cor1);
+        text-align: left;
+        margin-bottom: 5px;
+        margin:  5px auto;
+    }
+
+    
+    /*header*/
+    .header{
+        height: 290px;
+    }
+
+    .header h1 {
+        padding-top: 20px;
+        text-shadow: 2px 2px 2px #000;
+        margin-left: 5px;
+    }
+
+    .header > .sombra > .container > p {
+       margin-left: 5px;
+    }
+
+    .header .btn {
+        margin-top: 40px;
+    }
+
+    .header ul {  
+        position: absolute;
+        top: 140px;
+        right: 5px;
+        margin-bottom: 40px;
+    }
+
+    .header ul li {
+        padding: 5px 0;
+    } 
+
+    .foto {
+        top: 220px;
+        right: 32%;
+        width: 100px;
+        border: 5px solid #fff;
+    }
+
+    /*body*/
+
+    .info {
+        margin-top: 80px;
+        
+    }
+
+    h2{
+        display: block;
+        margin-left: 10px;
+        margin-top: 30px; 
+    }
+
+    .info .sobre p {
+        line-height: 22px;
+        text-align: left;
+        text-indent: 10px;
+        margin-left: 10px;
+    }
+
+    .info .educacao ul  {
+        margin-left: 10px;
+    }
+
+
+    .info .pessoal ul li {
+      margin-left: 10px;
+    }
+    
+    .info .pessoal ul li img {
+        float: left;
+        margin-right: 20px; 
+    }
+
+    .info .educ {
+        clear: both;
+        margin-top: 80px;
+    }
+    
+    .info2 {
+        margin-top: 30px;
+    }
+
+    .info2 .habilidade img {
+      margin-left: 10px;
+    }
+
+    .info2 .habilidade ul {
+        margin-left: 10px;
+    }
+ 
+    .info2 .idioma img {
+        margin-left: 10px;
+    }
+
+    .info2 .idioma ul {
+        margin-left: 10px;
+    }
+
+    .experiencia p {
+        margin-left: 10px;
+        text-indent: 10px;
+    }
+
+
+}
