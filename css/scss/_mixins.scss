@@ -1,0 +1,34 @@
+// VARIÁVEIS
+$font-principal: 'Nunito',
+sans-serif;
+$cor1: #3dc5ee;
+$cor2: #b86902;
+$l-device: 1200px;
+$m-device: 960px;
+$s-device: 550px;
+
+// MIXINS FONT
+@mixin font-1($size) {
+    font-family: $font-principal;
+    font-size: ($size / 16) + em;
+    line-height: (($size / 3 + $size) / 16) + em;
+
+    @if $size>=36 {
+        line-height: 1em;
+    }
+}
+
+//MIXIN MEDIA QUERIE
+@mixin device($size) {
+    @if $size==medium {
+        @media screen and (min-width: $s-device) and (max-width: $m-device) {
+            @content;
+        }
+    }
+
+    @else if $size==small {
+        @media screen and (max-width: $s-device - 1) {
+            @content;
+        }
+    }
+}
